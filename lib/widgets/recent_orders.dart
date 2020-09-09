@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/data/constants.dart';
 import 'package:food_delivery_app/data/data.dart';
 import 'package:food_delivery_app/models/order.dart';
 
@@ -7,22 +8,15 @@ class RecentOrders extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10.0),
       width: 320.0,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0),
-        border: Border.all(
-          color: Colors.grey[300],
-          width: 1.0,
-        ),
-      ),
+      decoration: kMainBoxDecoration,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
+        children: <Widget>[
           Expanded(
             child: Row(
-              children: [
+              children: <Widget>[
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(15.0),
+                  borderRadius: kMainTilesBorderRadius,
                   child: Image(
                     image: AssetImage(order.food.imageUrl),
                     height: 100.0,
@@ -32,11 +26,11 @@ class RecentOrders extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.all(12.0),
+                    margin: kMainContainerMargin,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: <Widget>[
                         Text(
                           order.food.name,
                           style: TextStyle(
@@ -48,19 +42,13 @@ class RecentOrders extends StatelessWidget {
                         SizedBox(height: 4.0),
                         Text(
                           order.restaurant.name,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: kSecondaryTileText,
                           overflow: TextOverflow.ellipsis,
                         ),
                         SizedBox(height: 4.0),
                         Text(
                           order.date,
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                          ),
+                          style: kSecondaryTileText,
                           overflow: TextOverflow.ellipsis,
                         ),
                       ],
@@ -93,16 +81,12 @@ class RecentOrders extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
+      children: <Widget>[
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          padding: kMainPadding,
           child: Text(
             'Recent Orders',
-            style: TextStyle(
-              fontSize: 24.0,
-              fontWeight: FontWeight.w600,
-              letterSpacing: 1.2,
-            ),
+            style: kMainTextStyle,
           ),
         ),
         Container(

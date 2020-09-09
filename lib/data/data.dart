@@ -71,31 +71,31 @@ final currentUser = User(
   name: 'Rebbecca',
   orders: [
     Order(
-      date: 'Nov 10, 2019',
+      date: 'May 10, 2020',
       food: _steak,
       restaurant: _restaurant2,
       quantity: 1,
     ),
     Order(
-      date: 'Nov 8, 2019',
+      date: 'Jun 8, 2020',
       food: _ramen,
       restaurant: _restaurant0,
       quantity: 3,
     ),
     Order(
-      date: 'Nov 5, 2019',
+      date: 'Jul 5, 2020',
       food: _burrito,
       restaurant: _restaurant1,
       quantity: 2,
     ),
     Order(
-      date: 'Nov 2, 2019',
+      date: 'Aug 2, 2020',
       food: _salmon,
       restaurant: _restaurant3,
       quantity: 1,
     ),
     Order(
-      date: 'Nov 1, 2019',
+      date: 'Sep 1, 2020',
       food: _pancakes,
       restaurant: _restaurant4,
       quantity: 1,
@@ -103,31 +103,31 @@ final currentUser = User(
   ],
   cart: [
     Order(
-      date: 'Nov 11, 2019',
+      date: 'Sep 11, 2020',
       food: _burger,
       restaurant: _restaurant2,
       quantity: 2,
     ),
     Order(
-      date: 'Nov 11, 2019',
+      date: 'Oct 11, 2020',
       food: _pasta,
       restaurant: _restaurant2,
       quantity: 1,
     ),
     Order(
-      date: 'Nov 11, 2019',
+      date: 'Oct 11, 2020',
       food: _salmon,
       restaurant: _restaurant3,
       quantity: 1,
     ),
     Order(
-      date: 'Nov 11, 2019',
+      date: 'Dec 11, 2020',
       food: _pancakes,
       restaurant: _restaurant4,
       quantity: 3,
     ),
     Order(
-      date: 'Nov 11, 2019',
+      date: 'Dec 11, 2020',
       food: _burrito,
       restaurant: _restaurant1,
       quantity: 2,
