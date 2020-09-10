@@ -23,3 +23,11 @@ final kMainBoxDecoration = BoxDecoration(
     width: 1.0,
   ),
 );
+
+kCartAddTextStyle(color) {
+  return TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 16.0,
+    color: color,
+  );
+}
