@@ -83,18 +83,19 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
             bottom: 10.0,
             right: 10.0,
             child: Container(
-              height: 50.0,
-              width: 50.0,
-              child: FloatingActionButton(
-                backgroundColor: Theme.of(context).primaryColor,
-                child: Icon(
-                  Icons.add,
-                  size: 30.0,
-                ),
+              width: 48.0,
+              decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor,
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              child: IconButton(
+                icon: Icon(Icons.add),
+                iconSize: 30.0,
+                color: Colors.white,
                 onPressed: () {},
               ),
             ),
-          )
+          ),
         ],
       ),
     );
